@@ -1,0 +1,33 @@
+<mtapp:setting
+    id="nav2main_link"
+    label="<__trans phrase="Navigate to the main.">">
+<ul>
+<li><textarea rows="10" class="text low" name="nav2main_link" id="nav2main_link"><mt:TransNav2Main escape="html"><mt:var name="nav2main_link"></mt:TransNav2Main></textarea></li>
+</ul>
+</mtapp:setting>
+<mtapp:setting
+    id="nav2main_anchor"
+    label="<__trans phrase="Anchor">">
+<ul>
+<li><textarea rows="10" class="text low" name="nav2main_anchor" id="nav2main_anchor"><mt:TransNav2Main escape="html"><mt:var name="nav2main_anchor"></mt:TransNav2Main></textarea></li>
+</ul>
+</mtapp:setting>
+<mtapp:setting
+    id="nav2main_extensions"
+    label="<__trans phrase="Extensions">">
+<ul>
+<li><input type="text" value="<mt:var name="nav2main_extensions" escape="html">" name="nav2main_extensions" id="nav2main_extensions" />
+</li>
+</ul>
+</mtapp:setting>
+<mtapp:setting
+    id="nav2main_enable"
+    label="<__trans phrase="Enable"> / <__trans phrase="Disable">">
+<ul>
+<li>
+<input type="checkbox" name="nav2main_enable" value="1" <mt:if name="nav2main_enable">checked="checked"</mt:if> />
+<__trans phrase="Enable">
+</li>
+</ul>
+<input type="hidden" name="nav2main_enable" value="0" />
+</mtapp:setting>

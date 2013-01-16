@@ -1,0 +1,25 @@
+name: Navi2Main
+id:   Navi2Main
+key:  navi2main
+version: 0.1
+author_link: https://alfasado.net/
+author_name: Alfasado Inc.
+l10n_class: Navi2Main::L10N
+description: <__trans phrase="Provide a navigate to the main element.">
+blog_config_template: navi2main_cfg.tmpl
+settings:
+    nav2main_link:
+        default: >
+            <a href="#contents_main"><__trans phrase="Go to main area."></a>
+    nav2main_anchor:
+        default: >
+            <span id="contents_main"><__trans phrase="Main area"></span>
+    nav2main_enable:
+        default: 1
+    nav2main_extensions:
+        default: .html
+callbacks:
+    build_page: $navi2main::Navi2Main::Plugin::_build_page
+tags:
+    block:
+        TransNav2Main: $navi2main::Navi2Main::Plugin::_hdlr_transnav2main
